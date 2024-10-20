@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Playlist Screen</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <script src="https://kit.fontawesome.com/12a41c30dd.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/css/playlist-screen.css">
+        
+    </head>
+    <body>
+
+        <!-- Header Section  -->
+
+        <header class="nav-bar">
+                <div class="title-combo">
+                    <div class="logo">
+                        <img src="assets/Photos/Logo.png" alt="logo">
+                    </div>
+    
+                    <div class="web-name text-hover">
+                        <a href="index.html">
+                        <h1>SSMB</h1>
+                        <h2>Music</h2>
+                        <h5>Player</h5>  
+                        </a>    
+                    </div>
+                </div>
+
+                <div class="fav">
+                    <a href="#">
+                        <h3 class="text-hover">Favourites</h3>
+                    </a>
+                </div>
+
+                <div class="search-box">
+                    <form action="">
+                        <button id="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" placeholder="Search.." name="search" id="search">
+                        <button id="mic" type="submit"><i class="fas fa-microphone"></i></button>
+                    </form>
+                </div>
+
+                <div class="">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            
+        </header>
+
+                <!-- Main Content -->
+        <main>
+            <aside class="aside section-1">
+                <div class="container">
+                    <img class="big-img" src="assets/song-img1/Raja Kumarudu (1999).jpg" alt="loading img.....">
+                    <div class="jumpbox-details">
+                        <div class="discriptive-part">
+                            <div class="right"> </div>
+                            <div class="song-name-main"><h1>Raja Kumarudu (1999)</h1></div><hr>
+                            <br>
+                            <p class="author"></p>
+                            <p class="desc sml-txt"> Rajakumarudu (1999), directed by K. Raghavendra Rao, marked the debut of Telugu actor Mahesh Babu.
+                                 The film's music, composed by Mani Sharma, played a crucial role in its success. Mani Sharma's melodious tunes, combined with meaningful lyrics by Chandrabose, Veturi, and Suddala Ashok Teja, captured the essence of the film's emotions. 
+                                 Songs like "Godari Gattupaina" and "Enduke Praayamu" became instant hits, showcasing Sharma’s versatility. 
+                                The film's soundtrack remains a significant milestone in Telugu cinema music history.
+                            </p>
+                        </div>
+                        <div class="action-part">
+                            <div class="btn">
+                                <button onclick="playAllSongs()">Play All</button>
+                                <button>Follow</button>
+                            </div>
+                            <p class="sml-txt"> 6 Tracks</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Playlist Section -->
+            <div class="playlist-main">
+                <!-- First playlist item -->
+                <div class="playlist-item" onclick="playSong('song1')">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;"><h2>01</h2></div>
+                            <div class="coverer">
+                                <img class="small-img inline-block" src="assets/song-img1/Raja Kumarudu (1999).jpg"alt=""> 
+                            </div>
+                            <div>
+                                <div><h2>Godari Gattupaina</h2></div>
+                                <p>	Mani Sharma</p>
+                            </div> 
+                        </div>
+                        <div class="content-right side-margin-12px">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second playlist item -->
+                <div class="playlist-item" onclick="playSong('song2')">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;"><h2>02</h2></div>
+                            <div class="coverer">
+                                <img class="small-img inline-block" src="assets/song-img1/Raja Kumarudu (1999).jpg" alt=""> 
+                            </div>
+                            <div>
+                                <div><h2>Enduke Praayamu </h2></div>
+                                <p>	Mani Sharma</p>
+                            </div> 
+                        </div>
+                        <div class="content-right side-margin-12px">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Three playlist item -->
+                <div class="playlist-item" onclick="playSong('song3')">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;"><h2>03</h2></div>
+                            <div class="coverer">
+                                <img class="small-img inline-block" src="assets/song-img1/Raja Kumarudu (1999).jpg" alt=""> 
+                            </div>
+                            <div>
+                                <div><h2>Ramachakkanodamma</h2></div>
+                                <p>	Mani Sharma</p>
+                            </div> 
+                        </div>
+                        <div class="content-right side-margin-12px">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Four playlist item -->
+                <div class="playlist-item" onclick="playSong('song4')">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;"><h2>04</h2></div>
+                            <div class="coverer">
+                                <img class="small-img inline-block" src="assets/song-img1/Raja Kumarudu (1999).jpg" alt=""> 
+                            </div>
+                            <div>
+                                <div><h2>Eppudeppudu</h2></div>
+                                <p>	Mani Sharma</p>
+                            </div> 
+                        </div>
+                        <div class="content-right side-margin-12px">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Five playlist item -->
+                <div class="playlist-item" onclick="playSong('song5')">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;"><h2>05</h2></div>
+                            <div class="coverer">
+                                <img class="small-img inline-block" src="assets/song-img1/Raja Kumarudu (1999).jpg" alt=""> 
+                            </div>
+                            <div>
+                                <div><h2>Bollywood Balarajuni</h2></div>
+                                <p>	Mani Sharma</p>
+                            </div> 
+                        </div>
+                        <div class="content-right side-margin-12px">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Six playlist item -->
+                <div class="playlist-item" onclick="playSong('song6')">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;"><h2>06</h2></div>
+                            <div class="coverer">
+                                <img class="small-img inline-block" src="assets/song-img1/Raja Kumarudu (1999).jpg" alt=""> 
+                            </div>
+                            <div>
+                                <div><h2>Indurudo Chandurudo</h2></div>
+                                <p>	Mani Sharma</p>
+                            </div> 
+                        </div>
+                        <div class="content-right side-margin-12px">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more playlist items here -->
+            </div>
+
+            <!-- Hidden Audio Elements -->
+            <audio id="song1" src="Music/Rajakumarudu (1999)/01 - Godari Gattupaina - SenSongsMp3.co.mp3"></audio>
+            <audio id="song2" src="Music/Rajakumarudu (1999)/02 - Enduke Praayamu - SenSongsMp3.co.mp3"></audio>
+            <audio id="song3" src="Music/Rajakumarudu (1999)/03 - Ramachakkanodamma - SenSongsMp3.co.mp3"></audio>
+            <audio id="song4" src="Music/Rajakumarudu (1999)/04 - Eppudeppudu - SenSongsMp3.co.mp3"></audio>
+            <audio id="song5" src="Music/Rajakumarudu (1999)/05 - Bollywood Balarajuni - SenSongsMp3.co.mp3"></audio>
+            <audio id="song6" src="Music/Rajakumarudu (1999)/06 - Indurudo Chandurudo - SenSongsMp3.co.mp3"></audio>
+       
+    </aside>
+
+<!-- Similar Artists Section -->
+<aside class="aside section-2">
+    <div>
+        <h3 class="inline">Similar Artists</h3>
+        <p class="inline sml-txt right">View All</p>
+        <div class="playlist">
+            <!-- Wrap the entire playlist item in the anchor -->
+            <a href="playlist-28.html" style="text-decoration: none; color: inherit;"> 
+                <div class="playlist-item">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div class="coverer">
+                                <img class="small-img inline-block" src="assets/song-img1/Guntur Kaaram (2024).jpg" alt="">
+                            </div>
+                            <div>
+                                <div>Guntur Kaaram</div>
+                                <p>2024</p>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</aside>
+</main>
+          
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <img id="footer-img" src="" alt="Album Art" class="footer-album-art">
+                    <div class="footer-song-info">
+                        <div id="footer-title">Song Title</div>
+                        <div id="footer-artist">Artist Name</div>
+                    </div>
+                </div>
+    
+                     <!-- Center section with control buttons -->
+            <div class="footer-center">
+                <button class="control-btn" id="like"><i class="fa-solid fa-heart"></i></button>
+                <button class="control-btn" id="prev" onclick="prevSong()"><i class="fa-solid fa-backward"></i></button>
+                <button class="control-btn play-pause" id="play-pause" onclick="togglePlayPause()"><i class="fa-solid fa-play"></i></button>
+                <button class="control-btn" id="next" onclick="nextSong()"><i class="fa-solid fa-forward"></i></button>
+                <button class="control-btn" id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+            </div>
+    
+                <div class="footer-right">
+                    <p>Time: <span id="current-time">0:00</span> </p>
+                    <input type="range" id="progress-bar" value="0" max="100">
+                </div>
+            </div>
+        
+        </footer>
+          <!-- JavaScript -->
+       <script>
+        let currentAudio = null;
+        let currentSongIndex = 0;
+const songs = ['song1', 'song2', 'song3','song4','song5','song6', ]; // Array of song IDs
+
+// Function to play all songs in sequence
+function playAllSongs() {
+    currentSongIndex = 0; // Start with the first song
+    playSong(songs[currentSongIndex]);
+
+    // Event listener to play the next song when the current one ends
+    currentAudio.addEventListener('ended', function() {
+        currentSongIndex++;
+        if (currentSongIndex < songs.length) {
+            playSong(songs[currentSongIndex]);
+        } else {
+            // If all songs have been played, reset
+            currentSongIndex = 0;
+            updatePlayPauseIcon(false); // Show play icon
+        }
+    });
+}
+        // Play individual song
+function playSong(songId) {
+    if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0; // Reset the current song
+    }
+    currentAudio = document.getElementById(songId);
+    currentAudio.play();
+    updatePlayPauseIcon(true);
+    updateFooterInfo(songId);
+
+    // Load metadata and set progress bar max value
+    currentAudio.addEventListener('loadedmetadata', function() {
+        document.getElementById('song-duration').textContent = formatTime(currentAudio.duration);
+        document.getElementById('progress-bar').max = currentAudio.duration;
+    });
+
+    currentAudio.addEventListener('timeupdate', updateCurrentTime);
+}
+
+
+        // Update the footer with the song's info
+        function updateFooterInfo(songId) {
+            let songTitle = '';
+            let artistName = '';
+            let songImg = '';
+
+            if (songId === 'song1') {
+                songTitle = "Godari Gattupaina";
+                artistName = "Mani Sharma";
+                songImg = "assets/song-img1/Raja Kumarudu (1999).jpg";
+            } if (songId === 'song2') {
+                songTitle = "Enduke Praayamu";
+                artistName = "Mani Sharma";
+                songImg = "assets/song-img1/Raja Kumarudu (1999).jpg";
+            } if (songId === 'song3') {
+                songTitle = "Ramachakkanodamma ";
+                artistName = "Mani Sharma";
+                songImg = "assets/song-img1/Raja Kumarudu (1999).jpg";
+            } if (songId === 'song4') {
+                songTitle = " Eppudeppudu ";
+                artistName = "Mani Sharma";
+                songImg = "assets/song-img1/Raja Kumarudu (1999).jpg";
+            } if (songId === 'song5') {
+                songTitle = " Bollywood Balarajuni";
+                artistName = "Mani Sharma";
+                songImg = "assets/song-img1/Raja Kumarudu (1999).jpg";
+            } else if (songId === 'song6') {
+                songTitle = "Indurudo Chandurudo";
+                artistName ="Mani Sharma";
+                songImg = "assets/song-img1/Raja Kumarudu (1999).jpg";
+            }
+
+            document.getElementById('footer-title').textContent = songTitle;
+            document.getElementById('footer-artist').textContent = artistName;
+            document.getElementById('footer-img').src = songImg;
+        }
+
+        // Update the current time and progress bar
+        function updateCurrentTime() {
+            const currentTimeElement = document.getElementById('current-time');
+            currentTimeElement.textContent = formatTime(currentAudio.currentTime);
+
+            // Update progress bar value
+            const progressBar = document.getElementById('progress-bar');
+            progressBar.value = currentAudio.currentTime;
+        }
+
+        // Format the time to MM:SS
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return mins + ':' + (secs < 10 ? '0' : '') + secs;
+        }
+
+        // Toggle play/pause icon
+        function togglePlayPause() {
+            if (currentAudio) {
+                if (currentAudio.paused) {
+                    currentAudio.play();
+                    updatePlayPauseIcon(true);
+                } else {
+                    currentAudio.pause();
+                    updatePlayPauseIcon(false);
+                }
+            }
+        }
+
+        function updatePlayPauseIcon(isPlaying) {
+            const playPauseBtn = document.getElementById('play-pause').firstElementChild;
+            if (isPlaying) {
+                playPauseBtn.classList.remove('fa-play');
+                playPauseBtn.classList.add('fa-pause');
+            } else {
+                playPauseBtn.classList.remove('fa-pause');
+                playPauseBtn.classList.add('fa-play');
+            }
+        }
+
+        // Seek song position when progress bar changes
+        document.getElementById('progress-bar').addEventListener('input', function() {
+            if (currentAudio) {
+                currentAudio.currentTime = this.value;
+            }
+        });
+    </script>
+    
+</body>
+</html>
