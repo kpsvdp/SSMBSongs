@@ -398,6 +398,17 @@ function playSong(songId) {
                 currentAudio.currentTime = this.value;
             }
         });
+
+        // Detect mobile touch events for play/pause button
+document.getElementById('play-pause').addEventListener('touchstart', togglePlayPause);
+
+// Larger buttons on mobile screens for easier access
+if (window.innerWidth < 768) {
+    document.querySelectorAll('.control-btn').forEach(btn => {
+        btn.style.fontSize = '30px'; // larger icons for mobile
+    });
+}
+
     </script>
     
 </body>
